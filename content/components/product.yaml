@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: product
+name: Product (Template)
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1678786023/vNext%20Demos/Baseline/canvas-preview/Product_Template_bybxyp.png
+parameters:
+  - id: content
+    name: Template Product
+    type: commercetoolsProduct
+    helpText: >-
+      This is an example of how the product will look when you go to it from the
+      product list page
+    typeConfig:
+      isRestrictLocale: true
+      isRestrictCurrency: true
+      allowedProductCategories: {}
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2023-06-06T02:37:50.786517+00:00'
+updated: '2023-06-06T02:37:50.786517+00:00'

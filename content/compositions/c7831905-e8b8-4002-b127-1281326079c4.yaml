@@ -1,0 +1,123 @@
+composition:
+  _name: Home
+  _id: c7831905-e8b8-4002-b127-1281326079c4
+  _slug: /
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Home Page
+    pageMetaDescription:
+      type: text
+      value: Commerce Baseline Home Page
+  slots:
+    content:
+      - _id: 71a0b1f1-cee5-40e8-a9db-ce85ad62a81a
+        type: hero
+        _pattern: ffa89cdd-17cd-407b-9b26-ffc821338f5e
+        _dataResources:
+          Content:
+            type: contentfulhero
+            variables:
+              entryIds: rEypfcXTAZlDQZMeh5MBY
+              contentTypeId: contentBlock
+      - _id: ab696fe2-b902-4eeb-b2e9-ccb74532856c
+        type: callToAction
+        _pattern: b21d3aa6-ac20-45a6-9207-2a8829c67908
+        _dataResources:
+          Call to Action Content:
+            type: contentfulCallToAction
+            variables:
+              entryIds: OVbeIGBi6gEDK6scpmJI1
+              contentTypeId: contentBlock
+      - _id: 2afdecc3-e459-48c0-9e44-263954648912
+        type: featuredProducts
+        parameters:
+          title:
+            type: text
+            value: Our amazing coffee machines
+          products:
+            type: commercetoolsProductList
+            value:
+              productIds:
+                - 9d417a87-03c7-4a8c-93c5-60f988482263
+                - 24847b29-2118-4678-a214-4f178384e394
+                - 5bc8c745-a753-4e5c-b2fe-c42c3bac1462
+                - 25317a20-a07d-445c-90a9-5755f889d6d4
+              restrictLocale: en-US
+              restrictSearch: masterVariant
+              restrictCurrency: USD
+          subTitle:
+            type: text
+            value: Coffee machines that learn to optimize for your taste buds.
+          buttonCopy:
+            type: text
+            value: See Coffee Makers
+          buttonLink:
+            type: link
+            value:
+              path: /shop/coffee-makers
+              type: projectMapNode
+              nodeId: 0065505a-37c8-4a77-a66d-3ae7d414af6f
+              projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677
+          showAddToCart:
+            type: checkbox
+            value: true
+      - _id: f9d3933b-5c12-4096-95e2-debf02342794
+        type: featuredProducts
+        variant: dark
+        parameters:
+          title:
+            type: text
+            value: Giving it some beans!
+          products:
+            type: commercetoolsProductList
+            value:
+              productIds:
+                - 699214c4-b3c6-4182-a85c-2d7ab694b5b3
+                - 29eb19f5-1c99-4e99-a303-630031a49387
+                - 194e1dbd-6ae7-47fc-b37f-67acd8829b6a
+                - 4f774f9c-e8c2-4c11-8f06-7da54314d5af
+              restrictLocale: en-US
+              restrictSearch: masterVariant
+              restrictCurrency: USD
+          subTitle:
+            type: text
+            value: Coffee beans from the best parts of the world.
+          buttonCopy:
+            type: text
+            value: See Coffee Beans
+          buttonLink:
+            type: link
+            value:
+              path: /shop/beans
+              type: projectMapNode
+              nodeId: 8cfa6e61-1c65-477f-8b9a-fc3b1c57930b
+              projectMapId: 89a0d435-3096-4e77-84f1-eda9ea8bc677
+          showAddToCart:
+            type: checkbox
+            value: true
+  _overrides:
+    71a0b1f1-cee5-40e8-a9db-ce85ad62a81a:
+      parameters:
+        image:
+          type: cloudinary-image
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniformdev/image/upload/v1656672429/JavaDrip/heros/Home%20Page/Default.webp
+              uuid: f73fce95-7b42-473f-a5a6-207c244c6d5c
+              width: '1440'
+              format: webp
+              height: '589'
+              caption: ''
+              version: 1656672429
+              publicId: JavaDrip/heros/Home Page/Default
+              createdAt: '2022-07-01T10:47:09Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniformdev/image/upload/q_auto,f_auto,w_150/JavaDrip/heros/Home%20Page/Default.webp
+              resourceType: image
+              transformation: ''
+created: '2023-06-06T02:38:03.129108+00:00'
+modified: '2023-06-06T02:55:37.952361+00:00'
+pattern: false

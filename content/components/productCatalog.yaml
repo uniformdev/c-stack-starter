@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: productCatalog
+name: Product Catalog
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675425099/vNext%20Demos/Baseline/canvas-preview/Product_Catalog_tb50gi.png
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: activeCategory
+    name: Main Category
+    type: commercetoolsCategorySelector
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: categories
+    name: Subcategories
+    type: commercetoolsCategorySelector
+    helpText: ''
+    typeConfig:
+      required: false
+      multiSelect: true
+  - id: prefetchedSearchResult
+    name: Products
+    type: commercetoolsProductQuery
+    helpText: ''
+    typeConfig:
+      restrictSearch: masterVariant
+      isRestrictLocale: true
+      isRestrictCurrency: true
+      allowedProductCategories:
+        748829e4-b5e0-4c7c-9ac6-36162ffc5545:
+          id: 748829e4-b5e0-4c7c-9ac6-36162ffc5545
+          name: Coffee Makers
+        e61ae64d-c752-4706-bc81-8b08b3f1634c:
+          id: e61ae64d-c752-4706-bc81-8b08b3f1634c
+          name: Beans
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-06-06T02:37:50.496752+00:00'
+updated: '2023-06-06T02:37:50.496752+00:00'

@@ -1,0 +1,84 @@
+composition:
+  _name: Coffee Makers
+  _id: f798db7c-ad3c-4689-89d1-f1f9c13655d3
+  _slug: /shop/coffee-makers
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Buy Coffee Maker
+    pageMetaDescription:
+      type: text
+      value: Buy Coffee Maker
+  slots:
+    content:
+      - _id: 6c2038b6-4c04-4b2e-9150-d035c36ed3e6
+        type: hero
+        _pattern: ffa89cdd-17cd-407b-9b26-ffc821338f5e
+        _dataResources:
+          Content:
+            type: contentfulhero
+            variables:
+              entryIds: 5H6k5pdDWR1wcpxRTLT0Qb
+              contentTypeId: contentBlock
+      - _id: 57217e13-86c7-41b4-a8b1-e8aad640bd74
+        type: productCatalog
+        parameters:
+          title:
+            type: text
+            value: Coffee Makers
+          categories:
+            type: commercetoolsCategorySelector
+            value:
+              categoryIds:
+                - 8163fbb4-4f2c-4136-b7e3-acf5712c2e5c
+                - 66cf450f-8cb0-4307-88ef-39b2d5637d25
+                - 912a5bbf-0769-474a-b6ed-6f45267bb4e0
+                - e17e25d3-1a18-4e4e-9c89-be571fb72367
+                - 871d5ca7-4220-474a-82d9-2a54edc71bbd
+              restrictLocale: en-US
+          activeCategory:
+            type: commercetoolsCategorySelector
+            value:
+              categoryIds:
+                - 748829e4-b5e0-4c7c-9ac6-36162ffc5545
+              restrictLocale: en-US
+          prefetchedSearchResult:
+            type: commercetoolsProductQuery
+            value:
+              options:
+                sort: DateCreated
+                brand: ''
+                count: 500
+                keyword: ''
+                sortOrder: desc
+                categories:
+                  - 748829e4-b5e0-4c7c-9ac6-36162ffc5545
+              searchLocale: en-US
+              restrictLocale: en-US
+              restrictSearch: masterVariant
+              restrictCurrency: USD
+  _overrides:
+    6c2038b6-4c04-4b2e-9150-d035c36ed3e6:
+      parameters:
+        image:
+          type: cloudinary-image
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniformdev/image/upload/v1662994592/JavaDrip/heros/Home%20Page/hero_alt4_iuvgjz_sld3xs.webp
+              uuid: 8331b3a8-aa93-4c20-9309-4681686effc2
+              width: '2600'
+              format: webp
+              height: '1300'
+              caption: ''
+              version: 1662994592
+              publicId: JavaDrip/heros/Home Page/hero_alt4_iuvgjz_sld3xs
+              createdAt: '2022-09-12T14:56:32Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniformdev/image/upload/q_auto,f_auto,w_150/JavaDrip/heros/Home%20Page/hero_alt4_iuvgjz_sld3xs.webp
+              resourceType: image
+              transformation: ''
+created: '2023-06-06T02:37:54.454549+00:00'
+modified: '2023-06-06T03:07:29.935964+00:00'
+pattern: false

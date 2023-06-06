@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: relatedProducts
+name: Related Products (Template)
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1675425482/vNext%20Demos/Baseline/canvas-preview/Related_Products_e3na3e.png
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: relatedProducts
+    name: 'Related Products '
+    type: commercetoolsProductList
+    helpText: ''
+    typeConfig:
+      restrictSearch: masterVariant
+      isRestrictLocale: true
+      isRestrictCurrency: true
+      allowedProductCategories: {}
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-06-06T02:37:51.098635+00:00'
+updated: '2023-06-06T02:37:51.098635+00:00'

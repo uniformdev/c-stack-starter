@@ -1,0 +1,79 @@
+composition:
+  _name: Articles List
+  _id: f911e432-dc42-4d5c-8375-94870de876a6
+  type: articlesList
+  parameters:
+    title:
+      type: text
+      value: Articles
+  slots:
+    items:
+      - _id: 3890fe2a-cac8-42e0-a713-50e23c83378e
+        type: $loop
+        slots:
+          body:
+            - _id: 882786dc-1e2d-4332-87e8-07dd02052f5b
+              type: articleListItem
+              parameters:
+                slug:
+                  type: text
+                  value: unresolved
+                  connectedData:
+                    syntax: jptr
+                    pointer: /Articles Content items Loop Item/fields/slug
+                title:
+                  type: text
+                  value: unresolved
+                  connectedData:
+                    syntax: jptr
+                    pointer: /Articles Content items Loop Item/fields/title
+                content:
+                  type: json
+                  value: unresolved
+                  connectedData:
+                    syntax: jptr
+                    pointer: /Articles Content items Loop Item/fields/content
+                thumbnail:
+                  type: image
+                  value: unresolved
+                  connectedData:
+                    syntax: jptr
+                    pointer: >-
+                      /Articles Content items Loop
+                      Item/fields/thumbnail/fields/file/url
+                description:
+                  type: text
+                  value: unresolved
+                  connectedData:
+                    syntax: jptr
+                    pointer: /Articles Content items Loop Item/fields/description
+              _overridability:
+                parameters:
+                  slug: 'yes'
+                  title: 'yes'
+                  content: 'yes'
+                  thumbnail: 'yes'
+                  description: 'yes'
+        _dataResources:
+          Articles Content items Loop Item:
+            type: sys-reserved-loop
+            variables:
+              connectedData: /Articles Content/items
+  _dataResources:
+    Articles Content:
+      type: contentfulArticlesQuery
+      variables:
+        limit: '6'
+        order: ''
+        keyword: ''
+        sortOrder: asc
+        sortFieldId: ''
+        contentTypeId: article
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      title: 'yes'
+created: '2023-06-06T02:37:55.203697+00:00'
+modified: '2023-06-06T02:50:45.178498+00:00'
+pattern: true

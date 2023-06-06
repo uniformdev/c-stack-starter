@@ -1,0 +1,78 @@
+composition:
+  _name: Custom Product Detail
+  _id: a78a8ad1-339f-486a-bfd5-1e97bf4c80f3
+  _slug: /black-mountain-pour-over-coffee-maker-97
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Custom Product Detail
+    hideFromNavigation:
+      type: checkbox
+      value: true
+    pageMetaDescription:
+      type: text
+      value: Custom Commerce Baseline Product Detail
+  slots:
+    content:
+      - _id: 8f4f41eb-1485-4662-a2c6-303c7ffa8b82
+        type: hero
+        _pattern: ffa89cdd-17cd-407b-9b26-ffc821338f5e
+        _dataResources:
+          Content:
+            type: contentfulhero
+            variables:
+              entryIds: 72al1y4juZJ1UsGcYd5ulz
+              contentTypeId: contentBlock
+      - _id: 531c048e-822b-4b0b-a894-d5f2733ed92b
+        type: product
+        parameters:
+          content:
+            type: commercetoolsProduct
+            value:
+              productIds:
+                - b5286364-a3c8-45f5-9a72-7e72a092303c
+              restrictLocale: en-US
+              restrictCurrency: USD
+      - _id: d615ec8d-8288-4d9d-abb5-23b0078542a1
+        type: relatedProducts
+        parameters:
+          title:
+            type: text
+            value: Explore related products
+          relatedProducts:
+            type: commercetoolsProductList
+            value:
+              productIds:
+                - b8c2bdc2-00ff-49ff-a83a-bdb8fd7d0d64
+                - 36e627d4-7dce-4efd-8996-be83ba29c397
+                - 6ef0b074-b0f4-4296-ac09-d2c74f536c6b
+                - 25317a20-a07d-445c-90a9-5755f889d6d4
+                - 44fac0d3-117f-436f-a843-9700e3dfafbf
+              restrictLocale: en-US
+              restrictSearch: masterVariant
+              restrictCurrency: USD
+  _overrides:
+    8f4f41eb-1485-4662-a2c6-303c7ffa8b82:
+      parameters:
+        image:
+          type: cloudinary-image
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniformdev/image/upload/v1662994646/JavaDrip/heros/Home%20Page/hero_alt2_y4zte4_wirisg.webp
+              uuid: 0a74afec-4ecf-46b4-bd98-52dc30680eb1
+              width: '2600'
+              format: webp
+              height: '1300'
+              caption: ''
+              version: 1662994646
+              publicId: JavaDrip/heros/Home Page/hero_alt2_y4zte4_wirisg
+              createdAt: '2022-09-12T14:57:26Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniformdev/image/upload/q_auto,f_auto,w_150/JavaDrip/heros/Home%20Page/hero_alt2_y4zte4_wirisg.webp
+              resourceType: image
+              transformation: ''
+created: '2023-06-06T02:38:02.442445+00:00'
+modified: '2023-06-06T03:11:12.478506+00:00'
+pattern: false

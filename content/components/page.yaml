@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: file-document
+parameters:
+  - id: pageMetaTitle
+    name: Page Meta Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: pageMetaDescription
+    name: Page Meta Description
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+      multiline: true
+  - id: hideFromNavigation
+    name: Hide From Navigation
+    type: checkbox
+    helpText: >-
+      Hide page from navigation. If you change this value, you must save the
+      composition before the change will be visible in Canvas.
+    typeConfig: null
+  - id: hideHeader
+    name: Hide Header
+    type: checkbox
+    helpText: Hide header on this page
+    typeConfig: null
+  - id: hideFooter
+    name: Hide Footer
+    type: checkbox
+    helpText: Hide header on this page
+    typeConfig: null
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - container
+      - featuredProducts
+      - product
+      - productCatalog
+      - relatedProducts
+      - $personalization
+      - $p:ffa89cdd-17cd-407b-9b26-ffc821338f5e
+      - $p:b21d3aa6-ac20-45a6-9207-2a8829c67908
+      - $p:dfe88c38-59be-4af0-af16-bfeda1059171
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+canBeComposition: true
+created: '2023-06-06T02:37:50.117054+00:00'
+updated: '2023-06-06T03:09:49.735966+00:00'

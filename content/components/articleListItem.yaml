@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: articleListItem
+name: Article List Item
+icon: >-
+  https://res.cloudinary.com/uniformdev/image/upload/v1677156405/vNext%20Demos/Baseline/canvas-preview/Article_list_item_jkiss5.png
+parameters:
+  - id: slug
+    name: Slug
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: title
+    name: Title
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: thumbnail
+    name: Thumbnail
+    type: image
+    helpText: ''
+    typeConfig:
+      required: false
+  - id: content
+    name: Content
+    type: json
+    helpText: ''
+    typeConfig:
+      required: false
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-06-06T02:37:47.935615+00:00'
+updated: '2023-06-06T02:37:47.935615+00:00'

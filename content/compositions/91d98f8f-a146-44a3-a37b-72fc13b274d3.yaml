@@ -1,0 +1,26 @@
+composition:
+  _name: Custom Article Page
+  _id: 91d98f8f-a146-44a3-a37b-72fc13b274d3
+  _slug: uncomplicating-coffee
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Contentful Custom Article Page
+    hideFromNavigation:
+      type: checkbox
+      value: true
+  slots:
+    content:
+      - _id: 89dcefad-a79a-4759-877c-d3c8dfe4ab7a
+        type: article
+        _pattern: dfe88c38-59be-4af0-af16-bfeda1059171
+        _dataResources:
+          Article Content:
+            type: contentfulArticle
+            variables:
+              entryIds: 3kSBIGTCkkCO4ayhx8wCkL
+              contentTypeId: article
+created: '2023-06-06T02:37:57.396599+00:00'
+modified: '2023-06-06T03:08:57.160657+00:00'
+pattern: false

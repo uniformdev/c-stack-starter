@@ -1,0 +1,26 @@
+composition:
+  _name: Article (Template)
+  _id: 942324a7-1cba-4c11-81a9-d1b6bc4f4f03
+  _slug: article-slug
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Article (Template)
+    hideFromNavigation:
+      type: checkbox
+      value: true
+  slots:
+    content:
+      - _id: 935ced1f-9f74-4f7b-823a-2707a7b846de
+        type: article
+        _pattern: dfe88c38-59be-4af0-af16-bfeda1059171
+        _dataResources:
+          Article Content:
+            type: contentfulArticle
+            variables:
+              entryIds: 13YegNvPObX9l92llny2kf
+              contentTypeId: article
+created: '2023-06-06T02:37:52.901907+00:00'
+modified: '2023-06-06T02:37:52.901907+00:00'
+pattern: false

@@ -1,0 +1,82 @@
+composition:
+  _name: Beans
+  _id: ade8dd7a-f5ea-424b-bae1-22ae0a587017
+  _slug: /shop/beans
+  type: page
+  parameters:
+    pageMetaTitle:
+      type: text
+      value: Buy Coffee Beans
+    pageMetaDescription:
+      type: text
+      value: Buy Coffee Beans
+  slots:
+    content:
+      - _id: f9c3bb55-9f27-4dac-8539-834f06622948
+        type: hero
+        _pattern: ffa89cdd-17cd-407b-9b26-ffc821338f5e
+        _dataResources:
+          Content:
+            type: contentfulhero
+            variables:
+              entryIds: 3Hnl4w2GuUgp0w0p2Bu6rn
+              contentTypeId: contentBlock
+      - _id: d5f6ea45-2ace-4035-af2b-96b35576b8a4
+        type: productCatalog
+        parameters:
+          title:
+            type: text
+            value: Beans
+          categories:
+            type: commercetoolsCategorySelector
+            value:
+              categoryIds:
+                - a7e5237b-da1f-4133-9bd9-335341198c0b
+                - 0e165a91-4fca-470e-a311-e4cd4b721e4a
+                - beb9eefc-f60f-4fd9-b786-3d2b493e6c8d
+              restrictLocale: en-US
+          activeCategory:
+            type: commercetoolsCategorySelector
+            value:
+              categoryIds:
+                - e61ae64d-c752-4706-bc81-8b08b3f1634c
+              restrictLocale: en-US
+          prefetchedSearchResult:
+            type: commercetoolsProductQuery
+            value:
+              options:
+                sort: date_modified
+                brand: ''
+                count: 500
+                keyword: ''
+                sortOrder: desc
+                categories:
+                  - e61ae64d-c752-4706-bc81-8b08b3f1634c
+              searchLocale: en-US
+              restrictLocale: en-US
+              restrictSearch: masterVariant
+              restrictCurrency: USD
+  _overrides:
+    f9c3bb55-9f27-4dac-8539-834f06622948:
+      parameters:
+        image:
+          type: cloudinary-image
+          value:
+            - alt: ''
+              url: >-
+                https://res.cloudinary.com/uniformdev/image/upload/v1662484929/JavaDrip/heros/Home%20Page/Beans.webp
+              uuid: 610eaab1-c29a-4c90-9515-8963651eabb2
+              width: '2600'
+              format: webp
+              height: '1300'
+              caption: ''
+              version: 1662484929
+              publicId: JavaDrip/heros/Home Page/Beans
+              createdAt: '2022-09-06T17:22:09Z'
+              previewUrl: >-
+                https://res.cloudinary.com/uniformdev/image/upload/q_auto,f_auto,w_150/JavaDrip/heros/Home%20Page/Beans.webp
+              resourceType: image
+              transformation: ''
+created: '2023-06-06T02:37:53.740335+00:00'
+modified: '2023-06-06T03:08:15.149501+00:00'
+pattern: false

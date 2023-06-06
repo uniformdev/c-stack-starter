@@ -1,0 +1,34 @@
+composition:
+  _name: Content CTA
+  _id: b21d3aa6-ac20-45a6-9207-2a8829c67908
+  type: callToAction
+  parameters:
+    title:
+      type: text
+      value: unresolved
+      connectedData:
+        syntax: jptr
+        pointer: /Call to Action Content/fields/title
+    description:
+      type: text
+      value: unresolved
+      connectedData:
+        syntax: jptr
+        pointer: /Call to Action Content/fields/description
+  _dataResources:
+    Call to Action Content:
+      type: contentfulCallToAction
+      variables:
+        entryIds: OVbeIGBi6gEDK6scpmJI1
+        contentTypeId: contentBlock
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      title: 'yes'
+      buttonCopy: 'yes'
+      buttonLink: 'yes'
+      description: 'yes'
+created: '2023-06-06T02:37:56.742876+00:00'
+modified: '2023-06-06T03:05:45.808228+00:00'
+pattern: true

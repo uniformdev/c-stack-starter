@@ -1,0 +1,32 @@
+composition:
+  _name: Article Detail
+  _id: dfe88c38-59be-4af0-af16-bfeda1059171
+  type: article
+  parameters:
+    title:
+      type: text
+      value: unresolved
+      connectedData:
+        syntax: jptr
+        pointer: /Article Content/fields/title
+    content:
+      type: json
+      value: unresolved
+      connectedData:
+        syntax: jptr
+        pointer: /Article Content/fields/content
+  _dataResources:
+    Article Content:
+      type: contentfulArticle
+      variables:
+        entryIds: 13YegNvPObX9l92llny2kf
+        contentTypeId: article
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      title: 'yes'
+      content: 'yes'
+created: '2023-06-06T02:37:55.943936+00:00'
+modified: '2023-06-06T03:09:32.958672+00:00'
+pattern: true

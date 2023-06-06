@@ -1,0 +1,47 @@
+id: contentfulhero
+displayName: Hero
+ttl: 30
+path: /entries
+custom:
+  include: 1
+  imagePath: image
+  customQuery: '[{"key": "metadata.tags.sys.id[all]", "value": "hero"}]'
+  searchField:
+    id: fields.title
+    type: Symbol
+  allowContentTypeIds:
+    - contentBlock
+method: GET
+purgeKey: 3bb453eb-c605-41a6-a2c4-e9c8f3c33098
+archetype: singleEntry
+variables:
+  limit:
+    type: text
+    default: '5'
+    displayName: Limit
+  order:
+    type: text
+    default: ''
+    displayName: Order
+  keyword:
+    type: text
+    default: ''
+    displayName: Search Text
+  entryIds:
+    type: text
+    default: ''
+    displayName: Entry Ids
+  contentTypeId:
+    type: text
+    default: contentBlock
+    displayName: Content Type
+parameters:
+  - key: include
+    value: '1'
+  - key: sys.id[in]
+    value: ${entryIds}
+longTermCache:
+  enabled: false
+  ttlInHours: 24
+dataSourceId: contentfulDataSource
+allowedOnComponents: []
